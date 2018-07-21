@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+    <link rel='stylesheet' href='portfolio.css'>
+    <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="form">
+  
+  
+  <form id="survey-form">
+    
+      <p id="description">Please tell me how I can improve my portfolio</p>
+       
+      <div class="label">
+        <label id="name-label" for="name">*Name:</label>
+      </div>
+      <div class="right">
+        <input type="text" id="name" placeholder="John Doe" required>       
+      </div>
+                    
+      <div class="label">
+        <label id="email-label">*e-mail:</label>
+      </div>       
+      <div class="right">
+        <input type="email" id="email" placeholder="jenkins@example.com" required>     
+      </div>
+                 
+      <div class="label">
+        <label id="number-label">*Age:</label>
+      </div>      
+      <div class="right">
+        <input type="number" id="number" placeholder="Age" min="1" max="99" required>
+      </div>            
+    
+      <div class="label">
+        <label>Which option best describes your current role:</label>
+      </div>
+      <div class="right">
+        <select name="position" id="dropdown">
+            <option value="student">Student</option>
+            option value="learning">Learning</option>
+            <option value="jundev">Junior Developer</option>
+            <option value="sendev">Senior Developer</option>
+        </select>
+      </div>
+    <div class="label">Would you hire me?(Hypothetical):</div>
+        <div class="right">
+            <input type="radio" name="hire" value="Yes"> Male<br>
+            <input type="radio" name="hire" value="No"> Female<br>
+            <input type="radio" name="hire" value="Heck no"> Other<br>
+            <input type="radio" name="hire" value="Just Maybe">Just Maybe    
+        </div>
+    
+    <div class="label">Tell me the things that I can improve on (Check all that apply):</div>
+    <div class="right">
+        <div class="check">
+            <input type="checkbox" id="layout" value="scales" checked />
+            <label for="layout">Layout</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="code" value="Better Code" />
+            <label for="code">Better Code</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="backend" value="Back End" />
+            <label for="backend">Back-End</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="front" value="Front End" />
+            <label for="front">Front-End</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Everything" value="Everything" />
+            <label for="Everything">Everything</label>
+        </div>
+    </div>
+
+    <div class="label">
+      Comments:
+    </div>
+    <div class="right">
+      <textarea id="comments" rows="10" cols="25"></textarea>
+    </div>
+
+    <div class="submit">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+      
+    </div>
+
+  </form>
+  
+
+</body>
+</html>
